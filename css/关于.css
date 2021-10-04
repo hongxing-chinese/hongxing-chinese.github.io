@@ -1,9 +1,8 @@
 div#container
 {
    width: 970px;
-   height: 1090px;
-   margin-top: 0;
-   margin-left: 0;
+   position: relative;
+   margin: 0 auto 0 auto;
    text-align: left;
 }
 body
@@ -15,7 +14,7 @@ body
    font-size: 13px;
    line-height: 1.1875;
    margin: 0;
-   padding: 0;
+   text-align: center;
 }
 a
 {
