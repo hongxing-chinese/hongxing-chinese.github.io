@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>关于</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/红星网.css" rel="stylesheet">
+<link href="css/关于.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script src="wwb16.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#reviewsImage1').addClass('visibility-hidden');
+   $('#portfolio-image2').addClass('visibility-hidden');
+   $("a[href*='#logo']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_logo').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#facts']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollfacts()
+   {
+      var $obj = $("#wb_facts");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollfacts();
+   $(window).scroll(function(event)
+   {
+      onScrollfacts();
+   });
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript1()
+{
+   var $obj = $('#JavaScript1');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript1();
+});
+countUpJavaScript1();
+function countUpJavaScript2()
+{
+   var $obj = $('#JavaScript2');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript2();
+});
+countUpJavaScript2();
+});
+</script>
+</head>
+<body>
+
+<hr id="Line2" style="position:absolute;left:15px;top:57px;width:940px;z-index:9;">
+<div id="wb_logo">
+<div id="logo">
+<div class="row">
+<div class="col-1">
+<div id="wb_logoIcon" style="display:inline-block;width:47px;height:42px;text-align:center;z-index:0;">
+<a href="./index.html"><div id="logoIcon"><i class="fa fa-globe"></i></div></a>
+</div>
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:1;">
+<img src="images/FveDnASRmvQeTODT6ZVz7H0eG8n7.png" id="Image1" alt="" width="940" height="357">
+</div>
+<div id="wb_Text2">
+<h1>马克思列宁主义论坛<br></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
+<ul id="headerMenu">
+<li><a href="./index.html">&#39318;&#39029;</a></li>
+<li class="active" aria-current="page">&#20851;&#20110;</li>
+<li><a href="./社论.html">&#31038;&#35770;</a></li>
+<li><a href="https://hongxin-chinese-write.mysxl.cn/">&#25237;&#31295;</a></li>
+<li><a href="./联系.html">&#32852;&#31995;</a></li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home-divider-bottom">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 355" preserveAspectRatio="none">
+<path fill="none" d="M999.45 0H0v165.72l379.95 132.46L999.45 0z"/>
+<path class="divider-fill" style="opacity:0.5" d="M379.95 298.18l28.47 9.92L1000 118.75V0h-.55l-619.5 298.18zM492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+<path class="divider-fill" style="opacity:0.5" d="M492.04 337.25L1000 252.63V118.75L408.42 308.1l83.62 29.15z"/>
+<path class="divider-fill" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+<path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+<path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l20.22 4.51H1000V252.63l-507.96 84.62 37.97 13.24z"/>
+<path class="divider-fill" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+<path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+<path class="divider-fill" style="opacity:0.3" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+<path class="divider-fill" style="opacity:0.5" d="M542.94 355h7.29l-20.22-4.51 12.93 4.51z"/>
+<path class="divider-fill" style="opacity:0.3" d="M379.95 298.18L0 165.72v66.59l353.18 78.75 26.77-12.88z"/>
+<path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+<path class="divider-fill" style="opacity:0.3" d="M353.18 311.06L0 232.31v71.86l288.42 38.06 64.76-31.17z"/>
+<path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+<path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l28.14-9.01-28.47-9.92-26.77 12.88 27.1 6.05z"/>
+<path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+<path class="divider-fill" style="opacity:0.5" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+<path class="divider-fill" style="opacity:0.3" d="M479.79 339.29l12.25-2.04-83.62-29.15-28.14 9.01 99.51 22.18z"/>
+<path class="divider-fill" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+<path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+<path class="divider-fill" style="opacity:0.5" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2z"/>
+<path class="divider-fill" style="opacity:0.3" d="M530.01 350.49l-37.97-13.24-12.25 2.04 50.22 11.2zM288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+<path class="divider-fill" style="opacity:0.5" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+<path class="divider-fill" style="opacity:0.3" d="M288.42 342.23l9.46 1.25 82.4-26.37-27.1-6.05-64.76 31.17z"/>
+<path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+<path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+<path class="divider-fill" style="opacity:0.5" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+<path class="divider-fill" style="opacity:0.3" d="M380.28 317.11l-82.4 26.37 87.3 11.52h.34l94.27-15.71-99.51-22.18z"/>
+<path class="divider-fill" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+<path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+<path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+<path class="divider-fill" style="opacity:0.5" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+<path class="divider-fill" style="opacity:0.3" d="M479.79 339.29L385.52 355h157.42l-12.93-4.51-50.22-11.2z"/>
+<path class="divider-fill" d="M288.42 342.23L0 304.17V355h385.18l-87.3-11.52-9.46-1.25z"/>
+</svg></div>
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:32px;line-height:41.5px;font-weight:bold;">关于我们</p>
+<p style="font-family:Arial;font-size:16px;line-height:18px;">&nbsp;</p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_facts">
+<div id="facts">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_reviewsText2">
+<p>红星网（github）是东莞一中青年马克思主义社团的机关网站，本站没有经过任何会议批准，内容可能会有所缪误。</p>
+<p>本站的宗旨是转载正确的马克思主义文章，同时也是社团文章的展示网站，包括微信订阅号下架的文章。</p>
+<p>本站是以传播马克思主义为第一宗旨的，我们拒绝任何商业行为。</p>
+<p>本站名言备案，如果有外力因素，将会下架，请各位原谅。</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4-overlay"></div>
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text7">
+<span style="color:#000000;font-family:Arial;font-size:16px;">©</span><span style="color:#000000;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

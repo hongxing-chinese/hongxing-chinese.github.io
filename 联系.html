@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>联系</title>
+<meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="css/红星网.css" rel="stylesheet">
+<link href="css/联系.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery-ui.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $("a[href*='#logo']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_logo').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#header']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#home']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript1()
+{
+   var $obj = $('#JavaScript1');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript1();
+});
+countUpJavaScript1();
+function countUpJavaScript2()
+{
+   var $obj = $('#JavaScript2');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript2();
+});
+countUpJavaScript2();
+});
+</script>
+</head>
+<body>
+
+<div id="wb_Text1" style="position:absolute;left:78px;top:683px;width:352px;height:12px;z-index:10;">
+&nbsp;</div>
+<div id="wb_Text2" style="position:absolute;left:94px;top:788px;width:226px;height:12px;z-index:11;">
+&nbsp;</div>
+<div id="wb_logo">
+<div id="logo">
+<div class="row">
+<div class="col-1">
+<div id="wb_logoIcon" style="display:inline-block;width:47px;height:42px;text-align:center;z-index:0;">
+<a href="./index.html"><div id="logoIcon"><i class="fa fa-globe"></i></div></a>
+</div>
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:1;">
+<img src="images/FveDnASRmvQeTODT6ZVz7H0eG8n7.png" id="Image2" alt="" width="940" height="357">
+</div>
+<div id="wb_Text8">
+<h1>马克思列宁主义论坛<br></h1>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_header">
+<div id="header">
+<div class="row">
+<div class="col-1">
+<div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
+<ul id="headerMenu">
+<li><a href="./index.html">&#39318;&#39029;</a></li>
+<li><a href="./关于.html">&#20851;&#20110;</a></li>
+<li><a href="./社论.html">&#31038;&#35770;</a></li>
+<li><a href="https://hongxin-chinese-write.mysxl.cn/">&#25237;&#31295;</a></li>
+<li class="active" aria-current="page">&#32852;&#31995;</li>
+</ul>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_home">
+<div id="home">
+<div class="col-1">
+<div id="wb_homeText">
+<p style="font-size:32px;line-height:41.5px;font-weight:bold;">联系我们</p>
+<p style="font-size:32px;line-height:41.5px;font-weight:bold;">&nbsp;</p>
+<p style="font-family:Arial;font-size:32px;line-height:36px;"><span style="font-family:微软雅黑;font-weight:bold;">如果你有一些麻烦事或者指导性建议，请尝试联系我们。</span></p>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text5">
+<span style="color:#000000;font-family:微软雅黑;font-size:32px;"><strong><a href="http://www.dgyz.net/">东莞市第一中学</a></strong></span><h1><br></h1>
+</div>
+</div>
+<div class="col-2">
+<div id="wb_Text7">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:32px;"><strong><a href="weixin://profile">莞一中青马社公众号</a></strong></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid4">
+<div id="LayoutGrid4-overlay"></div>
+<div id="LayoutGrid4">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<img src="images/标语1.png" id="Image1" alt="" width="940" height="142">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text4">
+<span style="color:#979797;font-family:Arial;font-size:16px;">©</span><span style="color:#979797;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
