@@ -5,7 +5,7 @@ html, body, #container
 }
 body
 {
-   background-color: #FA8072;
+   background-color: #FFFFFF;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -515,7 +515,7 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-color: rgba(255,255,255,0.00);
+   background-color: #FA8072;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
@@ -710,7 +710,7 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-color: transparent;
+   background-color: #FA8072;
    background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
