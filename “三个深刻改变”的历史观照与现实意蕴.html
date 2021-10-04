@@ -23,59 +23,12 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#LayoutGrid3']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutCirc');
-   });
-function countUpJavaScript1()
-{
-   var $obj = $('#JavaScript1');
-   var count = $obj.attr('data-count');
-   var bottomObj = $obj.offset().top + $obj.outerHeight();
-   var bottomWnd = $(window).scrollTop() + $(window).height();
-   if (bottomWnd > bottomObj && count != 0)
-   {
-      $({countUp: $obj.text()}).animate({countUp: count},
-      {
-         duration: 4000,
-         step: function() { $obj.text(Math.floor(this.countUp)); },
-         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
-      });  
-   }
-}
-$(window).scroll( function()
-{
-   countUpJavaScript1();
-});
-countUpJavaScript1();
-function countUpJavaScript2()
-{
-   var $obj = $('#JavaScript2');
-   var count = $obj.attr('data-count');
-   var bottomObj = $obj.offset().top + $obj.outerHeight();
-   var bottomWnd = $(window).scrollTop() + $(window).height();
-   if (bottomWnd > bottomObj && count != 0)
-   {
-      $({countUp: $obj.text()}).animate({countUp: count},
-      {
-         duration: 20000,
-         step: function() { $obj.text(Math.floor(this.countUp)); },
-         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
-      });  
-   }
-}
-$(window).scroll( function()
-{
-   countUpJavaScript2();
-});
-countUpJavaScript2();
 });
 </script>
 </head>
 <body>
 
-<hr id="Line2" style="position:absolute;left:0px;top:240px;width:940px;z-index:10;">
+<hr id="Line2" style="position:absolute;left:0px;top:240px;width:940px;z-index:9;">
 <div id="wb_logo">
 <div id="logo">
 <div class="row">
@@ -116,20 +69,6 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3-overlay"></div>
-<div id="LayoutGrid3">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:7;">
-<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
 </div>
 </div>
 </div>
