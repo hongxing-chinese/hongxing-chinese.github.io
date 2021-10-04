@@ -23,11 +23,6 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#home']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_home').offset().top-88 }, 600, 'easeOutCirc');
-   });
    $("a[href*='#LayoutGrid4']").click(function(event)
    {
       event.preventDefault();
@@ -80,9 +75,9 @@ countUpJavaScript2();
 </head>
 <body>
 
-<div id="wb_Text1" style="position:absolute;left:78px;top:683px;width:352px;height:12px;z-index:11;">
+<div id="wb_Text1" style="position:absolute;left:78px;top:683px;width:352px;height:12px;z-index:10;">
 &nbsp;</div>
-<div id="wb_Text2" style="position:absolute;left:94px;top:788px;width:226px;height:12px;z-index:12;">
+<div id="wb_Text2" style="position:absolute;left:94px;top:788px;width:226px;height:12px;z-index:11;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -119,14 +114,13 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
-<div id="wb_home">
-<div id="home">
+<div id="wb_LayoutGrid6">
+<div id="LayoutGrid6">
+<div class="row">
 <div class="col-1">
-<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:4;">
-<img src="images/联系我们1.png" id="Image3" alt="" width="570" height="158">
+<div id="wb_Text6">
+<span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br><br><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:64px;"><strong>关于我们</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:29px;">你可能会有一些麻烦事或者指导性建议，请尝试通过下列方式联系我们。</span><span style="color:#000000;font-family:Arial;font-size:24px;"><br></span><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span><span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span>
 </div>
-<div id="wb_Text3">
-<span style="color:#87CEEB;font-family:微软雅黑;font-size:29px;"><strong>如果你有一些麻烦事或者指导性建议，请尝试通过下列方式联系我们。</strong></span>
 </div>
 </div>
 </div>
@@ -153,7 +147,7 @@ countUpJavaScript2();
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:8;">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:7;">
 <img src="images/标语1.png" id="Image1" alt="" width="940" height="142">
 </div>
 </div>

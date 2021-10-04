@@ -308,7 +308,7 @@ input:focus, textarea:focus, select:focus
    padding: 0 20px;
    color: #E1E1E1;
 }
-#wb_home
+#wb_LayoutGrid6
 {
    clear: both;
    position: relative;
@@ -317,93 +317,86 @@ input:focus, textarea:focus, select:focus
    text-align: center;
    width: 100%;
    background-color: transparent;
-   background-image: none;
+   background-image: url('../images/红飘带.png');
+   background-repeat: round;
+   background-position: left top;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
 }
-#home
+#LayoutGrid6
 {
    box-sizing: border-box;
-   display: -webkit-flex;
-   display: flex;
-   -webkit-flex-direction: row;
-   flex-direction: row;
-   -webkit-flex-wrap: wrap;
-   flex-wrap: wrap;
-   padding: 75px 0px 75px 0px;
+   padding: 0px 15px 0px 15px;
    margin-right: auto;
    margin-left: auto;
-   max-width: 1140px;
 }
-#home > .col-1
+#LayoutGrid6 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid6 > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
    min-height: 1px;
-   padding-right: 200px;
-   padding-left: 200px;
+   padding-right: 15px;
+   padding-left: 15px;
    position: relative;
 }
-#home > .col-1
+#LayoutGrid6 > .row > .col-1
 {
-   -webkit-flex: 0 0 auto;
-   flex: 0 0 auto;
+   float: left;
 }
-#home > .col-1
+#LayoutGrid6 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
    border: 0px solid #FFFFFF;
-   flex-basis: 100%;
-   max-width: 100%;
-   display: -webkit-flex;
-   -webkit-flex-wrap: wrap;
-   -webkit-align-content: center;
-   -webkit-align-self: stretch;
-   -webkit-align-items: center;
-   display: flex;
-   flex-wrap: wrap;
-   align-content: center;
-   align-self: stretch;
-   align-items: center;
-   -webkit-justify-content: center;
-   justify-content: center;
-   text-align: center;
+   width: 100%;
+   text-align: left;
+}
+#LayoutGrid6:before,
+#LayoutGrid6:after,
+#LayoutGrid6 .row:before,
+#LayoutGrid6 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid6:after,
+#LayoutGrid6 .row:after
+{
+   clear: both;
 }
 @media (max-width: 480px)
 {
-#home > .col-1
+#LayoutGrid6 > .row > .col-1
 {
-   -webkit-flex-basis: 100% !important;
-   flex-basis: 100% !important;
-   max-width: 100% !important;
+   float: none;
+   width: 100% !important;
 }
 }
-#home-divider-bottom
+#wb_Text3 
 {
-   overflow: hidden;
-   position: absolute;
-   line-height: 0;
-   bottom: 0;
-   left: 0;
-   width: 100%;
-   height: 50px;
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
 }
-#home-divider-bottom svg
+#wb_Text3 div
+{
+   text-align: center;
+}
+#wb_Text3
 {
    display: block;
+   margin: 0;
+   box-sizing: border-box;
    width: 100%;
-   height: 100%;
-   position: relative;
-   left: 50%;
-   transform: translateX(-50%);
-}
-#home-divider-bottom .divider-fill
-{
-   fill: #FFFFFF;
-   transform-origin: bottom;
-   transform: rotateY(0deg);
 }
 #wb_facts
 {
@@ -686,6 +679,24 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
+#wb_Image2
+{
+   margin: 0;
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   padding: 0;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 800px;
+   margin-left: auto;
+   margin-right: auto;
+   vertical-align: top;
+}
 #wb_LayoutGrid2
 {
    clear: both;
@@ -773,40 +784,4 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    box-sizing: border-box;
    width: 100%;
-}
-#wb_Image2
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image2
-{
-   border: 0px solid #000000;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 800px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
-}
-#wb_Image3
-{
-   margin: 0;
-   vertical-align: top;
-}
-#Image3
-{
-   border: 0px solid #000000;
-   box-sizing: border-box;
-   padding: 0;
-   display: block;
-   width: 100%;
-   height: auto;
-   max-width: 370px;
-   margin-left: auto;
-   margin-right: auto;
-   vertical-align: top;
 }
