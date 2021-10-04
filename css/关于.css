@@ -1,7 +1,10 @@
-html, body, #container
+div#container
 {
-   width: 100%;
-   height: 100%;
+   width: 970px;
+   height: 1090px;
+   margin-top: 0;
+   margin-left: 0;
+   text-align: left;
 }
 body
 {
