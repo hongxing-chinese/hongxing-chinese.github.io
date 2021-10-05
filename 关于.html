@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>关于</title>
+<title>首页</title>
 <meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -21,10 +21,15 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_logo').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#LayoutGrid3']").click(function(event)
+   $("a[href*='#header']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top }, 600, 'easeOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#upStickyLayer']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
    });
    $("a[href*='#facts']").click(function(event)
    {
@@ -95,10 +100,130 @@ $(window).scroll( function()
 countUpJavaScript2();
 });
 </script>
+<script src="js/particles.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#welcome').prepend('<div id="particles1"></div>');
+   particlesJS('particles1', {
+     "particles": {
+       "number": {
+         "value": 100,
+         "density": {
+           "enable": true,
+           "value_area": 800
+         }
+       },
+       "color": {
+         "value": "FFFFFF"
+       },
+       "shape": {
+         "type": "circle",
+         "stroke": {
+           "width": 0,
+           "color": "#000000"
+         },
+         "polygon": {
+           "nb_sides": 3
+         },
+         "image": {
+           "src": "img/github.svg",
+           "width": 100,
+           "height": 100
+         }
+       }, 
+       "opacity": {
+         "value": 0.5,
+         "random": false,
+         "anim": {
+           "enable": false,
+           "speed": 1,
+           "opacity_min": 0.1,
+           "sync": false
+         }
+       },
+       "size": {
+         "value": 3,
+         "random": true,
+         "anim": {
+           "enable": false,
+           "speed": 90,
+           "size_min": 0.1,
+           "sync": false
+         }
+       },
+       "line_linked": {
+         "enable": true,
+         "distance": 150,
+         "color": "FFFFFF",
+         "opacity": 0.4,
+         "width": 1
+       },
+       "move": {
+         "enable": true,
+         "speed": 6,
+         "direction": "none",
+         "random": false,
+         "straight": false,
+         "out_mode": "out",
+         "bounce": false,
+         "attract": {
+           "enable": false,
+           "rotateX": 600,
+           "rotateY": 1200
+         }
+       }
+     },
+     "interactivity": {
+       "detect_on": "canvas",
+       "events": {
+         "onhover": {
+           "enable": true,
+           "mode": "grab"
+         },
+         "onclick": {
+           "enable": true,
+           "mode": "push"
+         },
+         "resize": true
+       },
+       "modes": {
+         "grab": {
+           "distance": 140,
+           "line_linked": {
+             "opacity": 1
+           }
+         },
+         "bubble": {
+           "distance": 400,
+           "size": 40,
+           "duration": 2,
+           "opacity": 0.8,
+           "speed": 3
+         },
+         "repulse": {
+           "distance": 200,
+           "duration": 0.4
+         },
+         "push": {
+           "particles_nb": 4
+         },
+         "remove": {
+           "particles_nb": 2
+         }
+       }
+     },
+     "retina_detect": true
+   });
+});
+</script>
 </head>
 <body>
 
-<hr id="Line2" style="position:absolute;left:15px;top:57px;width:940px;z-index:9;">
+
+
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:12;">
+&nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
 <div class="row">
@@ -116,8 +241,8 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3">
+<div id="wb_header">
+<div id="header">
 <div class="row">
 <div class="col-1">
 <div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
@@ -133,6 +258,10 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
+</div>
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:13;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
+<a href="./index.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
 </div>
 <div id="wb_LayoutGrid6">
 <div id="LayoutGrid6">
@@ -167,7 +296,7 @@ countUpJavaScript2();
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:7;">
 <img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
 </div>
 </div>
@@ -175,11 +304,11 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text7">
+<div id="wb_Text4">
 <span style="color:#000000;font-family:Arial;font-size:16px;">©</span><span style="color:#000000;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
 </div>
 </div>

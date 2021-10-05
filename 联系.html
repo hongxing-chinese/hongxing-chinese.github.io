@@ -23,14 +23,19 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#LayoutGrid4']").click(function(event)
+   $("a[href*='#upStickyLayer']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+      $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
    });
-function countUpJavaScript1()
+   $("a[href*='#LayoutGrid9']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid9').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript5()
 {
-   var $obj = $('#JavaScript1');
+   var $obj = $('#JavaScript5');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -46,12 +51,12 @@ function countUpJavaScript1()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript1();
+   countUpJavaScript5();
 });
-countUpJavaScript1();
-function countUpJavaScript2()
+countUpJavaScript5();
+function countUpJavaScript6()
 {
-   var $obj = $('#JavaScript2');
+   var $obj = $('#JavaScript6');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -67,17 +72,134 @@ function countUpJavaScript2()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript2();
+   countUpJavaScript6();
 });
-countUpJavaScript2();
+countUpJavaScript6();
+});
+</script>
+<script src="js/particles.min.js"></script>
+<script>
+$(document).ready(function()
+{
+   $('#welcome').prepend('<div id="particles1"></div>');
+   particlesJS('particles1', {
+     "particles": {
+       "number": {
+         "value": 100,
+         "density": {
+           "enable": true,
+           "value_area": 800
+         }
+       },
+       "color": {
+         "value": "FFFFFF"
+       },
+       "shape": {
+         "type": "circle",
+         "stroke": {
+           "width": 0,
+           "color": "#000000"
+         },
+         "polygon": {
+           "nb_sides": 3
+         },
+         "image": {
+           "src": "img/github.svg",
+           "width": 100,
+           "height": 100
+         }
+       }, 
+       "opacity": {
+         "value": 0.5,
+         "random": false,
+         "anim": {
+           "enable": false,
+           "speed": 1,
+           "opacity_min": 0.1,
+           "sync": false
+         }
+       },
+       "size": {
+         "value": 3,
+         "random": true,
+         "anim": {
+           "enable": false,
+           "speed": 90,
+           "size_min": 0.1,
+           "sync": false
+         }
+       },
+       "line_linked": {
+         "enable": true,
+         "distance": 150,
+         "color": "FFFFFF",
+         "opacity": 0.4,
+         "width": 1
+       },
+       "move": {
+         "enable": true,
+         "speed": 6,
+         "direction": "none",
+         "random": false,
+         "straight": false,
+         "out_mode": "out",
+         "bounce": false,
+         "attract": {
+           "enable": false,
+           "rotateX": 600,
+           "rotateY": 1200
+         }
+       }
+     },
+     "interactivity": {
+       "detect_on": "canvas",
+       "events": {
+         "onhover": {
+           "enable": true,
+           "mode": "grab"
+         },
+         "onclick": {
+           "enable": true,
+           "mode": "push"
+         },
+         "resize": true
+       },
+       "modes": {
+         "grab": {
+           "distance": 140,
+           "line_linked": {
+             "opacity": 1
+           }
+         },
+         "bubble": {
+           "distance": 400,
+           "size": 40,
+           "duration": 2,
+           "opacity": 0.8,
+           "speed": 3
+         },
+         "repulse": {
+           "distance": 200,
+           "duration": 0.4
+         },
+         "push": {
+           "particles_nb": 4
+         },
+         "remove": {
+           "particles_nb": 2
+         }
+       }
+     },
+     "retina_detect": true
+   });
 });
 </script>
 </head>
 <body>
 
-<div id="wb_Text1" style="position:absolute;left:78px;top:683px;width:352px;height:12px;z-index:10;">
-&nbsp;</div>
-<div id="wb_Text2" style="position:absolute;left:94px;top:788px;width:226px;height:12px;z-index:11;">
+
+
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:13;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -86,10 +208,10 @@ countUpJavaScript2();
 <div id="wb_logoIcon" style="display:inline-block;width:47px;height:42px;text-align:center;z-index:0;">
 <a href="./index.html"><div id="logoIcon"><i class="fa fa-globe"></i></div></a>
 </div>
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:1;">
-<img src="images/FveDnASRmvQeTODT6ZVz7H0eG8n7.png" id="Image2" alt="" width="940" height="357">
+<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:1;">
+<img src="images/FveDnASRmvQeTODT6ZVz7H0eG8n7.png" id="Image1" alt="" width="940" height="357">
 </div>
-<div id="wb_Text8">
+<div id="wb_Text2">
 <h1>马克思列宁主义论坛<br></h1>
 </div>
 </div>
@@ -114,52 +236,56 @@ countUpJavaScript2();
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:14;">
+<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
+<a href="./index.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
+</div>
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text6">
+<div id="wb_Text4">
 <span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:48px;"><strong>联系我们</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:37px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:24px;">你可能会有一些麻烦事或者指导性建议，请尝试通过下列方式联系我们。</span><span style="color:#000000;font-family:Arial;font-size:24px;"><br></span><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span><span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid1">
-<div id="LayoutGrid1">
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text5">
-<span style="color:#000000;font-family:微软雅黑;font-size:32px;"><strong><a href="http://www.dgyz.net/">东莞市第一中学</a></strong></span><h1><br></h1>
+<div id="wb_Text8">
+<span style="color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br><a href="http://www.dgyz.net/">东莞市第一中学</a></strong></span><h1><br></h1>
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Text7">
-<span style="color:#FF0000;font-family:微软雅黑;font-size:32px;"><strong><a href="https://link.zhihu.com/?target=https%3A//open.weixin.qq.com/qr/code%3Fusername%3Ddgyz20210917">莞一中青马社公众号</a></strong></span>
+<div id="wb_Text5">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:32px;"><strong><br><a href="https://link.zhihu.com/?target=https%3A//open.weixin.qq.com/qr/code%3Fusername%3Ddgyz20210917">莞一中青马社公众号</a></strong></span>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4-overlay"></div>
-<div id="LayoutGrid4">
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9-overlay"></div>
+<div id="LayoutGrid9">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image1" style="display:inline-block;width:100%;height:auto;z-index:7;">
-<img src="images/标语1.png" id="Image1" alt="" width="940" height="142">
+<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:8;">
+<img src="images/标语1.png" id="Image5" alt="" width="940" height="142">
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
+<div id="wb_LayoutGrid10">
+<div id="LayoutGrid10">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text4">
+<div id="wb_Text9">
 <span style="color:#979797;font-family:Arial;font-size:16px;">©</span><span style="color:#979797;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
 </div>
 </div>
