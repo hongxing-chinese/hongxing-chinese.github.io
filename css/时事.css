@@ -564,122 +564,6 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    width: 100%;
 }
-#wb_LayoutGrid7
-{
-   clear: both;
-   position: relative;
-   table-layout: fixed;
-   display: table;
-   text-align: center;
-   width: 100%;
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #CCCCCC;
-   box-sizing: border-box;
-   margin: 0;
-}
-#LayoutGrid7
-{
-   box-sizing: border-box;
-   padding: 0px 15px 0px 15px;
-   margin-right: auto;
-   margin-left: auto;
-}
-#LayoutGrid7 > .row
-{
-   margin-right: -15px;
-   margin-left: -15px;
-}
-#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
-{
-   box-sizing: border-box;
-   font-size: 0px;
-   min-height: 1px;
-   padding-right: 15px;
-   padding-left: 15px;
-   position: relative;
-}
-#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
-{
-   float: left;
-}
-#LayoutGrid7 > .row > .col-1
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 50%;
-   text-align: left;
-}
-#LayoutGrid7 > .row > .col-2
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #FFFFFF;
-   width: 50%;
-   text-align: left;
-}
-#LayoutGrid7:before,
-#LayoutGrid7:after,
-#LayoutGrid7 .row:before,
-#LayoutGrid7 .row:after
-{
-   display: table;
-   content: " ";
-}
-#LayoutGrid7:after,
-#LayoutGrid7 .row:after
-{
-   clear: both;
-}
-@media (max-width: 480px)
-{
-#LayoutGrid7 > .row > .col-1, #LayoutGrid7 > .row > .col-2
-{
-   float: none;
-   width: 100% !important;
-}
-}
-#wb_Text4 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text4 div
-{
-   text-align: center;
-}
-#wb_Text4
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
-#wb_Text5 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text5 div
-{
-   text-align: center;
-}
-#wb_Text5
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_LayoutGrid9
 {
    clear: both;
@@ -857,12 +741,189 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
-#wb_Image5
+#wb_LayoutGrid3
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid3
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+   max-width: 1140px;
+}
+#LayoutGrid3 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid3 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid3 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid3 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid3 > .row > .col-1 > .col-1-padding
+{
+   box-sizing: border-box;
+   width: 100%;
+   padding: 100px 0px 100px 0px;
+}
+#LayoutGrid3:before,
+#LayoutGrid3:after,
+#LayoutGrid3 .row:before,
+#LayoutGrid3 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid3:after,
+#LayoutGrid3 .row:after
+{
+   clear: both;
+}
+@media (max-width: 480px)
+{
+#LayoutGrid3 > .row > .col-1
+{
+   float: none;
+   width: 100% !important;
+}
+}
+#wb_Heading3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+}
+#Heading3
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+   margin: 0;
+   text-align: center;
+}
+#wb_IconFont3
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   text-align: center;
+   margin: 0px 0px 10px 0px;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#IconFont3
+{
+   height: 48px;
+   width: 43px;
+}
+#IconFont3 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 43px;
+   line-height: 48px;
+   vertical-align: middle;
+   width: 42px;
+}
+#wb_IconFont3:hover i
+{
+   color: #66AFE9;
+}
+#wb_IconFont4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   text-align: center;
+   margin: 0px 0px 10px 0px;
+   padding: 0;
+   vertical-align: top;
+   display:inline-block;
+   position:relative;
+}
+#IconFont4
+{
+   height: 48px;
+   width: 43px;
+}
+#IconFont4 i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 43px;
+   line-height: 48px;
+   vertical-align: middle;
+   width: 39px;
+}
+#wb_IconFont4:hover i
+{
+   color: #66AFE9;
+}
+#wb_Heading4
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   box-sizing: border-box;
+   vertical-align: top;
+   margin: 0;
+   padding: 10px 10px 10px 10px;
+   text-align: center;
+}
+#Heading4
+{
+   color: #FFFFFF;
+   font-family: Arial;
+   font-weight: bold;
+   font-style: normal;
+   font-size: 19px;
+   margin: 0;
+   text-align: center;
+}
+#wb_Image2
 {
    margin: 0;
    vertical-align: top;
 }
-#Image5
+#Image2
 {
    border: 0px solid #000000;
    box-sizing: border-box;
@@ -957,6 +1018,46 @@ input:focus, textarea:focus, select:focus
    text-align: center;
 }
 #wb_Text7
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text5 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text5 div
+{
+   text-align: center;
+}
+#wb_Text5
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text4 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text4 div
+{
+   text-align: center;
+}
+#wb_Text4
 {
    display: block;
    margin: 0;

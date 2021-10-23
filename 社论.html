@@ -75,6 +75,53 @@ $(window).scroll( function()
    countUpJavaScript6();
 });
 countUpJavaScript6();
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript1()
+{
+   var $obj = $('#JavaScript1');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript1();
+});
+countUpJavaScript1();
+function countUpJavaScript2()
+{
+   var $obj = $('#JavaScript2');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript2();
+});
+countUpJavaScript2();
 });
 </script>
 <script src="js/particles.min.js"></script>
@@ -240,15 +287,15 @@ $(document).ready(function()
 <div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
 <a href="./社论.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
 </div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7">
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8-overlay"></div>
+<div id="LayoutGrid8">
 <div class="row">
 <div class="col-1">
+<div class="col-1-padding">
 <div id="wb_Text5">
 <span style="color:#000000;font-family:微软雅黑;font-size:17px;"><strong>社团文章（不定时更新）<br><br></strong></span><span style="color:#000000;font-family:微软雅黑;font-size:20px;"><a href="./巴黎公社的历史和对社会主义的意义.html">巴黎公社的历史和对社会主义的意义</a><br><br><a href="./中国社会阶级分析简述.html">中国社会阶级分析简述</a><br><br></span><span style="color:#FFFFFF;font-family:Calibri;font-size:20px;">The End</span>
 </div>
-</div>
-<div class="col-2">
 <div id="wb_Text4">
 <span style="color:#000000;font-family:微软雅黑;font-size:17px;"><strong>专业文章（不定时更新）<br><br></strong></span><span style="color:#000000;font-family:微软雅黑;font-size:20px;"><a href="./列宁关于社会主义运动战略与策略的理论与启示.html">列宁关于社会主义运动战略与策略的理论与启示<br></a><br><a href="./“三个深刻改变”的历史观照与现实意蕴.html">“三个深刻改变”的历史观照与现实意蕴</a><br></span>
 </div>
@@ -256,14 +303,15 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8-overlay"></div>
-<div id="LayoutGrid8">
+</div>
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:7;">
-<img src="images/标语1.png" id="Image5" alt="" width="940" height="142">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:7;">
+<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
 </div>
 </div>
 </div>
