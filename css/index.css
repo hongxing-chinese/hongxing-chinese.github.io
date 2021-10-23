@@ -963,10 +963,8 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-color: transparent;
-   background-image: url('../images/index_LayoutGrid3_bkgrnd.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
@@ -1500,10 +1498,8 @@ input:focus, textarea:focus, select:focus
    display: table;
    text-align: center;
    width: 100%;
-   background-color: transparent;
-   background-image: url('../images/index_LayoutGrid5_bkgrnd.png');
-   background-repeat: repeat;
-   background-position: left top;
+   background-color: rgba(255,255,255,0.00);
+   background-image: none;
    border: 0px solid #CCCCCC;
    box-sizing: border-box;
    margin: 0;
