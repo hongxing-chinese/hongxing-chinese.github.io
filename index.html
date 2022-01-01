@@ -89,31 +89,6 @@ countUpJavaScript6();
       skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
    }
    skrollrInit();
-   $("a[href*='#intro']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   function onScrollintro()
-   {
-      var $obj = $("#wb_intro");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
-         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
-      }
-   }
-   onScrollintro();
-   $(window).scroll(function(event)
-   {
-      onScrollintro();
-   });
-   $("a[href*='#LayoutGrid4']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
-   });
    $("a[href*='#LayoutGrid5']").click(function(event)
    {
       event.preventDefault();
@@ -161,6 +136,31 @@ $(window).scroll( function()
    countUpJavaScript4();
 });
 countUpJavaScript4();
+   $("a[href*='#LayoutGrid4']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   $("a[href*='#intro']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function onScrollintro()
+   {
+      var $obj = $("#wb_intro");
+      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
+      {
+         $obj.addClass("in-viewport");
+         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
+         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
+      }
+   }
+   onScrollintro();
+   $(window).scroll(function(event)
+   {
+      onScrollintro();
+   });
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -398,13 +398,14 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_intro">
-<div id="intro">
+<div id="wb_LayoutGrid5">
+<div id="LayoutGrid5-overlay"></div>
+<div id="LayoutGrid5">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Text4">
-<span style="color:#FFFFFF;font-family:微软雅黑;font-size:64px;"><strong>团结起来，争取更大胜利</strong></span>
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<img src="images/标语2.png" id="Image6" alt="" width="940" height="155">
 </div>
 </div>
 </div>
@@ -450,14 +451,13 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid5">
-<div id="LayoutGrid5-overlay"></div>
-<div id="LayoutGrid5">
+<div id="wb_intro">
+<div id="intro">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:17;">
-<img src="images/标语2.png" id="Image6" alt="" width="940" height="155">
+<div id="wb_Text4">
+<span style="color:#FFFFFF;font-family:微软雅黑;font-size:64px;"><strong>团结起来<br>争取更大胜利</strong></span>
 </div>
 </div>
 </div>
