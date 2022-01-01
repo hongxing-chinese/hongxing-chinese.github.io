@@ -32,6 +32,63 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
    });
+   $("a[href*='#LayoutGrid7']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript5()
+{
+   var $obj = $('#JavaScript5');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript5();
+});
+countUpJavaScript5();
+function countUpJavaScript6()
+{
+   var $obj = $('#JavaScript6');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript6();
+});
+countUpJavaScript6();
+   $("a[href*='#services']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
    $("a[href*='#intro']").click(function(event)
    {
       event.preventDefault();
@@ -52,63 +109,6 @@ $(document).ready(function()
    {
       onScrollintro();
    });
-   $("a[href*='#services']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   function skrollrInit()
-   {
-      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
-   }
-   skrollrInit();
-   $("a[href*='#LayoutGrid3']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutCirc');
-   });
-function countUpJavaScript1()
-{
-   var $obj = $('#JavaScript1');
-   var count = $obj.attr('data-count');
-   var bottomObj = $obj.offset().top + $obj.outerHeight();
-   var bottomWnd = $(window).scrollTop() + $(window).height();
-   if (bottomWnd > bottomObj && count != 0)
-   {
-      $({countUp: $obj.text()}).animate({countUp: count},
-      {
-         duration: 4000,
-         step: function() { $obj.text(Math.floor(this.countUp)); },
-         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
-      });  
-   }
-}
-$(window).scroll( function()
-{
-   countUpJavaScript1();
-});
-countUpJavaScript1();
-function countUpJavaScript2()
-{
-   var $obj = $('#JavaScript2');
-   var count = $obj.attr('data-count');
-   var bottomObj = $obj.offset().top + $obj.outerHeight();
-   var bottomWnd = $(window).scrollTop() + $(window).height();
-   if (bottomWnd > bottomObj && count != 0)
-   {
-      $({countUp: $obj.text()}).animate({countUp: count},
-      {
-         duration: 20000,
-         step: function() { $obj.text(Math.floor(this.countUp)); },
-         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
-      });  
-   }
-}
-$(window).scroll( function()
-{
-   countUpJavaScript2();
-});
-countUpJavaScript2();
    $("a[href*='#LayoutGrid4']").click(function(event)
    {
       event.preventDefault();
@@ -342,13 +342,14 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_intro">
-<div id="intro">
+<div id="wb_LayoutGrid7">
+<div id="LayoutGrid7-overlay"></div>
+<div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
 <div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:6;">
-<img src="images/2021国庆 .jpg" id="Image2" alt="" width="940" height="271">
+<img src="images/标语3.png" id="Image2" alt="" width="940" height="155">
 </div>
 </div>
 </div>
@@ -397,14 +398,13 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid3">
-<div id="LayoutGrid3-overlay"></div>
-<div id="LayoutGrid3">
+<div id="wb_intro">
+<div id="intro">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image4" style="display:inline-block;width:100%;height:auto;z-index:13;">
-<img src="images/标语3.png" id="Image4" alt="" width="940" height="155">
+<div id="wb_Text4">
+<span style="color:#FFFFFF;font-family:草檀斋毛泽东字体;font-size:85px;">团结起来，争取更大胜利</span>
 </div>
 </div>
 </div>
