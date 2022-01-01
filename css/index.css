@@ -1069,7 +1069,18 @@ input:focus, textarea:focus, select:focus
    background-image: url('../images/背景1.jpg');
    background-repeat: round;
    background-position: left top;
-   border: 0px solid #CCCCCC;
+   border-top-width: 0px;
+   border-right-width: 0px;
+   border-bottom-width: 0px;
+   border-left-width: 0px;
+   border-top-style: solid;
+   border-right-style: solid;
+   border-bottom-style: solid;
+   border-left-style: solid;
+   border-top-color: #000000;
+   border-right-color: #000000;
+   border-bottom-color: #000000;
+   border-left-color: #000000;
    box-sizing: border-box;
    margin: 0;
 }
