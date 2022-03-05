@@ -32,6 +32,16 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
    });
+   $("a[href*='#LayoutGrid8']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid8').offset().top-88 }, 600, 'easeOutCirc');
+   });
+   function skrollrInit()
+   {
+      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
+   }
+   skrollrInit();
    $("a[href*='#LayoutGrid7']").click(function(event)
    {
       event.preventDefault();
@@ -84,11 +94,6 @@ countUpJavaScript6();
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
    });
-   function skrollrInit()
-   {
-      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
-   }
-   skrollrInit();
    $("a[href*='#LayoutGrid5']").click(function(event)
    {
       event.preventDefault();
@@ -290,7 +295,7 @@ $(document).ready(function()
 
 
 
-<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:24;">
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:28;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -327,7 +332,7 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:25;">
+<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:29;">
 <div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
 <a href="./index.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
 </div>
@@ -342,13 +347,43 @@ $(document).ready(function()
 </div>
 </div>
 </div>
+<div id="wb_LayoutGrid8">
+<div id="LayoutGrid8">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Card4" style="display:flex;width:100%;text-align:center;z-index:6;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card4-card-body">
+      <div id="Card4-card-item0"><i class="fa fa-commenting-o"></i></div>
+      <div id="Card4-card-item1">时事</div>
+      <div id="Card4-card-item2">看看世界发生了什么</div>
+   </div>
+</div>
+<a id="Button9" href="./时事.html" style="display:inline-block;width:104px;height:40px;z-index:7;">阅读</a>
+</div>
+</div>
+<div class="col-2">
+<div class="col-2-padding">
+<div id="wb_Card5" style="display:flex;width:100%;text-align:center;z-index:8;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+   <div id="Card5-card-body">
+      <div id="Card5-card-item0"><i class="fa fa-keyboard-o"></i></div>
+      <div id="Card5-card-item1">热点消息</div>
+      <div id="Card5-card-item2">2022年社团嘉年华来了</div>
+   </div>
+</div>
+<a id="Button7" href="./热点消息.html" style="display:inline-block;width:104px;height:40px;z-index:9;">阅读</a>
+</div>
+</div>
+</div>
+</div>
+</div>
 <div id="wb_LayoutGrid7">
 <div id="LayoutGrid7-overlay"></div>
 <div id="LayoutGrid7">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:10;">
 <img src="images/标语3.png" id="Image2" alt="" width="940" height="155">
 </div>
 </div>
@@ -361,38 +396,38 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_servicesCard1" style="display:flex;width:100%;text-align:center;z-index:7;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+<div id="wb_servicesCard1" style="display:flex;width:100%;text-align:center;z-index:11;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
    <div id="servicesCard1-card-body">
       <div id="servicesCard1-card-item0"><i class="fa fa-commenting-o"></i></div>
-      <div id="servicesCard1-card-item1">时事</div>
-      <div id="servicesCard1-card-item2">来了解一下世界发生了什么（内容不是本站提供的）</div>
+      <div id="servicesCard1-card-item1">关于</div>
+      <div id="servicesCard1-card-item2">来了解我们的宗旨</div>
    </div>
 </div>
-<a id="Button3" href="./时事.html" style="display:inline-block;width:104px;height:40px;z-index:8;">阅读</a>
+<a id="Button3" href="./关于.html" style="display:inline-block;width:104px;height:40px;z-index:12;">阅读</a>
 </div>
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_servicesCard2" style="display:flex;width:100%;text-align:center;z-index:9;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+<div id="wb_servicesCard2" style="display:flex;width:100%;text-align:center;z-index:13;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
    <div id="servicesCard2-card-body">
       <div id="servicesCard2-card-item0"><i class="fa fa-keyboard-o"></i></div>
       <div id="servicesCard2-card-item1">社论</div>
       <div id="servicesCard2-card-item2">来阅读一下本站的个人社论。当然，你也可以投稿。</div>
    </div>
 </div>
-<a id="Button2" href="./社论.html" style="display:inline-block;width:104px;height:40px;z-index:10;">阅读</a>
+<a id="Button2" href="./社论.html" style="display:inline-block;width:104px;height:40px;z-index:14;">阅读</a>
 </div>
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_servicesCard3" style="display:flex;width:100%;text-align:center;z-index:11;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
+<div id="wb_servicesCard3" style="display:flex;width:100%;text-align:center;z-index:15;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
    <div id="servicesCard3-card-body">
       <div id="servicesCard3-card-item0"><i class="fa fa-link"></i></div>
       <div id="servicesCard3-card-item1">联系</div>
       <div id="servicesCard3-card-item2">我们是青年马克思主义团体的官方网站，想了解我们就来吧。</div>
    </div>
 </div>
-<a id="Button1" href="./联系.html" style="display:inline-block;width:104px;height:40px;z-index:12;">了解</a>
+<a id="Button1" href="./联系.html" style="display:inline-block;width:104px;height:40px;z-index:16;">了解</a>
 </div>
 </div>
 </div>
@@ -404,7 +439,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:17;">
 <img src="images/标语2.png" id="Image6" alt="" width="940" height="155">
 </div>
 </div>
@@ -417,7 +452,7 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_infoCard1" style="display:flex;width:100%;text-align:center;z-index:14;">
+<div id="wb_infoCard1" style="display:flex;width:100%;text-align:center;z-index:18;">
    <div id="infoCard1-card-body">
       <div id="infoCard1-card-item0">巴黎公社的历史和对社会主义的意义</div>
       <div id="infoCard1-card-item1">巴黎公社的历史<br>第一，法国革命“专政”<br></div>
@@ -428,7 +463,7 @@ $(document).ready(function()
 </div>
 <div class="col-2">
 <div class="col-2-padding">
-<div id="wb_infoCard2" style="display:flex;width:100%;text-align:center;z-index:15;">
+<div id="wb_infoCard2" style="display:flex;width:100%;text-align:center;z-index:19;">
    <div id="infoCard2-card-body">
       <div id="infoCard2-card-item0">列宁关于社会主义运动战略与策略的理论与启示</div>
       <div id="infoCard2-card-item1">当今世界正处于百年未有之大变局，新冠肺炎疫情的全球蔓延，加速了</div>
@@ -439,7 +474,7 @@ $(document).ready(function()
 </div>
 <div class="col-3">
 <div class="col-3-padding">
-<div id="wb_infoCard3" style="display:flex;width:100%;text-align:center;z-index:16;">
+<div id="wb_infoCard3" style="display:flex;width:100%;text-align:center;z-index:20;">
    <div id="infoCard3-card-body">
       <div id="infoCard3-card-item0">中国社会阶级分析简述<br></div>
       <div id="infoCard3-card-item1">当前，中国的社会状况发生了建国以来所没有的深层次变化，那就是伴随着私有制的大规模实行，这个社会的</div>
@@ -473,7 +508,7 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:19;">
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:23;">
 <img src="images/地图.PNG" id="Image3" alt="" width="616" height="207">
 </div>
 </div>
