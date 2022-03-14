@@ -347,47 +347,7 @@ input:focus, textarea:focus, select:focus
    margin-right: auto;
    vertical-align: top;
 }
-#wb_Text4 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text4 div
-{
-   text-align: center;
-}
-#wb_Text4
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
-#wb_Text5 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text5 div
-{
-   text-align: center;
-}
-#wb_Text5
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
-#wb_LayoutGrid8
+#wb_LayoutGrid2
 {
    clear: both;
    position: relative;
@@ -401,7 +361,7 @@ input:focus, textarea:focus, select:focus
    box-sizing: border-box;
    margin: 0;
 }
-#LayoutGrid8
+#LayoutGrid2
 {
    box-sizing: border-box;
    padding: 0px 15px 0px 15px;
@@ -409,12 +369,12 @@ input:focus, textarea:focus, select:focus
    margin-left: auto;
    max-width: 1140px;
 }
-#LayoutGrid8 > .row
+#LayoutGrid2 > .row
 {
    margin-right: -15px;
    margin-left: -15px;
 }
-#LayoutGrid8 > .row > .col-1
+#LayoutGrid2 > .row > .col-1
 {
    box-sizing: border-box;
    font-size: 0px;
@@ -423,11 +383,11 @@ input:focus, textarea:focus, select:focus
    padding-left: 15px;
    position: relative;
 }
-#LayoutGrid8 > .row > .col-1
+#LayoutGrid2 > .row > .col-1
 {
    float: left;
 }
-#LayoutGrid8 > .row > .col-1
+#LayoutGrid2 > .row > .col-1
 {
    background-color: transparent;
    background-image: none;
@@ -435,34 +395,34 @@ input:focus, textarea:focus, select:focus
    width: 100%;
    text-align: center;
 }
-#LayoutGrid8 > .row > .col-1 > .col-1-padding
+#LayoutGrid2 > .row > .col-1 > .col-1-padding
 {
    box-sizing: border-box;
    width: 100%;
    padding: 100px 0px 100px 0px;
 }
-#LayoutGrid8:before,
-#LayoutGrid8:after,
-#LayoutGrid8 .row:before,
-#LayoutGrid8 .row:after
+#LayoutGrid2:before,
+#LayoutGrid2:after,
+#LayoutGrid2 .row:before,
+#LayoutGrid2 .row:after
 {
    display: table;
    content: " ";
 }
-#LayoutGrid8:after,
-#LayoutGrid8 .row:after
+#LayoutGrid2:after,
+#LayoutGrid2 .row:after
 {
    clear: both;
 }
 @media (max-width: 480px)
 {
-#LayoutGrid8 > .row > .col-1
+#LayoutGrid2 > .row > .col-1
 {
    float: none;
    width: 100% !important;
 }
 }
-#wb_Heading5
+#wb_Heading3
 {
    background-color: transparent;
    background-image: none;
@@ -473,7 +433,7 @@ input:focus, textarea:focus, select:focus
    padding: 10px 10px 10px 10px;
    text-align: center;
 }
-#Heading5
+#Heading3
 {
    color: #FFFFFF;
    font-family: Arial;
@@ -483,7 +443,7 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    text-align: center;
 }
-#wb_IconFont5
+#wb_IconFont3
 {
    background-color: transparent;
    background-image: none;
@@ -495,12 +455,12 @@ input:focus, textarea:focus, select:focus
    display:inline-block;
    position:relative;
 }
-#IconFont5
+#IconFont3
 {
    height: 48px;
    width: 43px;
 }
-#IconFont5 i
+#IconFont3 i
 {
    color: #FFFFFF;
    display: inline-block;
@@ -509,11 +469,11 @@ input:focus, textarea:focus, select:focus
    vertical-align: middle;
    width: 42px;
 }
-#wb_IconFont5:hover i
+#wb_IconFont3:hover i
 {
    color: #66AFE9;
 }
-#wb_IconFont6
+#wb_IconFont4
 {
    background-color: transparent;
    background-image: none;
@@ -525,12 +485,12 @@ input:focus, textarea:focus, select:focus
    display:inline-block;
    position:relative;
 }
-#IconFont6
+#IconFont4
 {
    height: 48px;
    width: 43px;
 }
-#IconFont6 i
+#IconFont4 i
 {
    color: #FFFFFF;
    display: inline-block;
@@ -539,11 +499,11 @@ input:focus, textarea:focus, select:focus
    vertical-align: middle;
    width: 39px;
 }
-#wb_IconFont6:hover i
+#wb_IconFont4:hover i
 {
    color: #66AFE9;
 }
-#wb_Heading6
+#wb_Heading4
 {
    background-color: transparent;
    background-image: none;
@@ -554,7 +514,7 @@ input:focus, textarea:focus, select:focus
    padding: 10px 10px 10px 10px;
    text-align: center;
 }
-#Heading6
+#Heading4
 {
    color: #FFFFFF;
    font-family: Arial;
@@ -563,6 +523,134 @@ input:focus, textarea:focus, select:focus
    font-size: 19px;
    margin: 0;
    text-align: center;
+}
+#wb_Text6 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text6 div
+{
+   text-align: center;
+}
+#wb_Text6
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text3 div
+{
+   text-align: center;
+}
+#wb_Text3
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
+}
+#wb_LayoutGrid5
+{
+   clear: both;
+   position: relative;
+   table-layout: fixed;
+   display: table;
+   text-align: center;
+   width: 100%;
+   background-color: #FFFFFF;
+   background-image: none;
+   border: 0px solid #CCCCCC;
+   box-sizing: border-box;
+   margin: 0;
+}
+#LayoutGrid5
+{
+   box-sizing: border-box;
+   padding: 0px 15px 0px 15px;
+   margin-right: auto;
+   margin-left: auto;
+}
+#LayoutGrid5 > .row
+{
+   margin-right: -15px;
+   margin-left: -15px;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   box-sizing: border-box;
+   font-size: 0px;
+   min-height: 1px;
+   padding-right: 15px;
+   padding-left: 15px;
+   position: relative;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   float: left;
+}
+#LayoutGrid5 > .row > .col-1
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   width: 100%;
+   text-align: center;
+}
+#LayoutGrid5:before,
+#LayoutGrid5:after,
+#LayoutGrid5 .row:before,
+#LayoutGrid5 .row:after
+{
+   display: table;
+   content: " ";
+}
+#LayoutGrid5:after,
+#LayoutGrid5 .row:after
+{
+   clear: both;
+}
+@media (max-width: 768px)
+{
+#LayoutGrid5 > .row > .col-1
+{
+   float: none;
+   width: 100%;
+}
+}
+#wb_Text7 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   padding: 0;
+   margin: 0;
+   text-align: center;
+}
+#wb_Text7 div
+{
+   text-align: center;
+}
+#wb_Text7
+{
+   display: block;
+   margin: 0;
+   box-sizing: border-box;
+   width: 100%;
 }
 #wb_LayoutGrid1
 {
