@@ -37,6 +37,34 @@ input:focus, textarea:focus, select:focus
 {
    outline: none;
 }
+#wb_upIcon
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #3E3E3E;
+   text-align: center;
+   margin: 0;
+   padding: 4px 4px 4px 4px;
+   vertical-align: top;
+}
+#upIcon
+{
+   height: 24px;
+   width: 24px;
+}
+#upIcon i
+{
+   color: #FFFFFF;
+   display: inline-block;
+   font-size: 24px;
+   line-height: 24px;
+   vertical-align: middle;
+   width: 14px;
+}
+#wb_upIcon:hover i
+{
+   color: #007BFF;
+}
 #wb_logo
 {
    clear: both;
@@ -177,40 +205,6 @@ input:focus, textarea:focus, select:focus
    float: none;
    width: 100% !important;
 }
-}
-#upStickyLayer
-{
-   background-color: #005B9E;
-   background-image: none;
-   opacity: 0.77;
-}
-#wb_upIcon
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #3E3E3E;
-   text-align: center;
-   margin: 0;
-   padding: 4px 4px 4px 4px;
-   vertical-align: top;
-}
-#upIcon
-{
-   height: 24px;
-   width: 24px;
-}
-#upIcon i
-{
-   color: #FFFFFF;
-   display: inline-block;
-   font-size: 24px;
-   line-height: 24px;
-   vertical-align: middle;
-   width: 14px;
-}
-#wb_upIcon:hover i
-{
-   color: #007BFF;
 }
 #wb_logoIcon
 {
@@ -610,6 +604,12 @@ input:focus, textarea:focus, select:focus
    margin: 0;
    box-sizing: border-box;
    width: 100%;
+}
+#upStickyLayer
+{
+   background-color: #005B9E;
+   background-image: none;
+   opacity: 0.77;
 }
 #particles1
 {
