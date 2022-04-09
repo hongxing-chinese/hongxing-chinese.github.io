@@ -2,20 +2,17 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>关于</title>
+<title>杂文</title>
 <meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/红星网.css" rel="stylesheet">
-<link href="css/关于.css" rel="stylesheet">
+<link href="css/杂文.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="wwb16.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#reviewsImage1').addClass('visibility-hidden');
-   $('#portfolio-image2').addClass('visibility-hidden');
    $("a[href*='#logo']").click(function(event)
    {
       event.preventDefault();
@@ -26,35 +23,104 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#upStickyLayer']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
-   });
-   $("a[href*='#facts']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_facts').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   function onScrollfacts()
-   {
-      var $obj = $("#wb_facts");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
-         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
-      }
-   }
-   onScrollfacts();
-   $(window).scroll(function(event)
-   {
-      onScrollfacts();
-   });
    $("a[href*='#LayoutGrid4']").click(function(event)
    {
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript5()
+{
+   var $obj = $('#JavaScript5');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript5();
+});
+countUpJavaScript5();
+function countUpJavaScript6()
+{
+   var $obj = $('#JavaScript6');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript6();
+});
+countUpJavaScript6();
+   $("a[href*='#LayoutGrid2']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid2').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript3()
+{
+   var $obj = $('#JavaScript3');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript3();
+});
+countUpJavaScript3();
+function countUpJavaScript4()
+{
+   var $obj = $('#JavaScript4');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript4();
+});
+countUpJavaScript4();
+   $("a[href*='#LayoutGrid1']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
    });
 function countUpJavaScript1()
 {
@@ -222,7 +288,7 @@ $(document).ready(function()
 
 
 
-<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:12;">
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:18;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -248,43 +314,11 @@ $(document).ready(function()
 <div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
 <ul id="headerMenu">
 <li><a href="./index.html">&#39318;&#39029;</a></li>
-<li class="active" aria-current="page">&#20851;&#20110;</li>
-<li><a href="./社论.html">&#31038;&#35770;</a></li>
-<li><a href="https://hongxin-chinese-write.mysxl.cn/">&#25237;&#31295;</a></li>
-<li><a href="./联系.html">&#32852;&#31995;</a></li>
+<li><a href="./时事.html">&#26102;&#20107;</a></li>
+<li><a href="./活动.html">&#27963;&#21160;</a></li>
+<li class="active" aria-current="page">&#26434;&#25991;</li>
 </ul>
 
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:13;">
-<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
-<a href="./关于.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
-</div>
-<div id="wb_LayoutGrid6">
-<div id="LayoutGrid6">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text3">
-<span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:48px;"><strong>关于我们</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:32px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:24px;">关于我们的一些介绍，希望你能了解我们。</span><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span><span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_facts">
-<div id="facts">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_reviewsText2">
-<p>红星网（github）是东莞一中青年马克思主义社团的机关网站，本站没有经过任何会议批准，内容可能会有所缪误。</p>
-<p>本站的宗旨是转载正确的马克思主义文章，同时也是社团文章的展示网站，包括微信订阅号下架的文章。</p>
-<p>本站是以传播马克思主义为第一宗旨的，我们拒绝任何商业行为。</p>
-<p>本站没有备案，如果有外力因素，将会下架，请各位原谅。</p>
-</div>
 </div>
 </div>
 </div>
@@ -296,8 +330,36 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:7;">
-<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text6">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:43px;"><strong>说明</strong></span><span style="color:#FF0000;font-family:微软雅黑;font-size:35px;"><strong><br></strong></span>
+</div>
+<div id="wb_Text3">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:20px;">本网已经弃用，所有数据已经转移。本网仅保留时事，活动，杂文页面。更新将会非常缓慢。如有需要，请移步<br></span><span style="color:#FF0000;font-family:微软雅黑;font-size:37px;"><a href="hongxing.netlify.app">红星网</a></span><span style="color:#000000;font-family:Arial;font-size:20px;"><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2-overlay"></div>
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div class="col-1-padding">
+<div id="wb_Text7">
+<span style="color:#000000;font-family:微软雅黑;font-size:20px;"><br><br><a href="./列宁关于社会主义运动战略与策略的理论与启示.html">列宁关于社会主义运动战略与策略的理论与启示</a><br><br><a href="./“三个深刻改变”的历史观照与现实意蕴.html">“三个深刻改变”的历史观照与现实意蕴<br></a><br></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_upIcon" style="display:inline-block;width:24px;height:24px;text-align:center;z-index:9;">
+<a href="./杂文.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a>
 </div>
 </div>
 </div>
@@ -305,11 +367,25 @@ $(document).ready(function()
 </div>
 </div>
 <div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
 <div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text4">
-<span style="color:#000000;font-family:Arial;font-size:16px;">©</span><span style="color:#000000;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
+<div class="col-1-padding">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:13;">
+<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid9">
+<div id="LayoutGrid9">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text8">
+<span style="color:#979797;font-family:Arial;font-size:16px;">©</span><span style="color:#979797;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
 </div>
 </div>
 </div>

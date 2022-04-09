@@ -2,12 +2,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>联系</title>
+<title>活动</title>
 <meta name="generator" content="WYSIWYG Web Builder 16 Trial Version - https://www.wysiwygwebbuilder.com">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link href="css/font-awesome.min.css" rel="stylesheet">
 <link href="css/红星网.css" rel="stylesheet">
-<link href="css/联系.css" rel="stylesheet">
+<link href="css/活动.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
 <script>
@@ -23,19 +23,14 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#upStickyLayer']").click(function(event)
+   $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid1').offset().top-88 }, 600, 'easeOutCirc');
    });
-   $("a[href*='#LayoutGrid9']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid9').offset().top-88 }, 600, 'easeOutCirc');
-   });
-function countUpJavaScript5()
+function countUpJavaScript1()
 {
-   var $obj = $('#JavaScript5');
+   var $obj = $('#JavaScript1');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -51,12 +46,12 @@ function countUpJavaScript5()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript5();
+   countUpJavaScript1();
 });
-countUpJavaScript5();
-function countUpJavaScript6()
+countUpJavaScript1();
+function countUpJavaScript2()
 {
-   var $obj = $('#JavaScript6');
+   var $obj = $('#JavaScript2');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -72,9 +67,56 @@ function countUpJavaScript6()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript6();
+   countUpJavaScript2();
 });
-countUpJavaScript6();
+countUpJavaScript2();
+   $("a[href*='#LayoutGrid3']").click(function(event)
+   {
+      event.preventDefault();
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutCirc');
+   });
+function countUpJavaScript3()
+{
+   var $obj = $('#JavaScript3');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 4000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript3();
+});
+countUpJavaScript3();
+function countUpJavaScript4()
+{
+   var $obj = $('#JavaScript4');
+   var count = $obj.attr('data-count');
+   var bottomObj = $obj.offset().top + $obj.outerHeight();
+   var bottomWnd = $(window).scrollTop() + $(window).height();
+   if (bottomWnd > bottomObj && count != 0)
+   {
+      $({countUp: $obj.text()}).animate({countUp: count},
+      {
+         duration: 20000,
+         step: function() { $obj.text(Math.floor(this.countUp)); },
+         complete: function() { $obj.text(this.countUp); $obj.attr('data-count', 0); }
+      });  
+   }
+}
+$(window).scroll( function()
+{
+   countUpJavaScript4();
+});
+countUpJavaScript4();
 });
 </script>
 <script src="js/particles.min.js"></script>
@@ -199,7 +241,7 @@ $(document).ready(function()
 
 
 
-<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:13;">
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:11;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -225,10 +267,9 @@ $(document).ready(function()
 <div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
 <ul id="headerMenu">
 <li><a href="./index.html">&#39318;&#39029;</a></li>
-<li><a href="./关于.html">&#20851;&#20110;</a></li>
-<li><a href="./社论.html">&#31038;&#35770;</a></li>
-<li><a href="https://hongxin-chinese-write.mysxl.cn/">&#25237;&#31295;</a></li>
-<li class="active" aria-current="page">&#32852;&#31995;</li>
+<li><a href="./时事.html">&#26102;&#20107;</a></li>
+<li class="active" aria-current="page">&#27963;&#21160;</li>
+<li><a href="./杂文.html">&#26434;&#25991;</a></li>
 </ul>
 
 </div>
@@ -236,56 +277,42 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:14;">
-<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
-<a href="./联系.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
-</div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text4">
-<span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:48px;"><strong>联系我们</strong></span><span style="color:#FFFFFF;font-family:Arial;font-size:37px;"><strong><br></strong></span><span style="color:#FFFFFF;font-family:微软雅黑;font-size:24px;">你可能会有一些麻烦事或者指导性建议，请尝试通过下列方式联系我们。</span><span style="color:#000000;font-family:Arial;font-size:24px;"><br></span><span style="background-color:#FFFFFF;color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span><span style="background-color:#FFFFFF;color:#FFFFFF;font-family:微软雅黑;font-size:32px;"><strong><br></strong></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text8">
-<span style="color:#000000;font-family:微软雅黑;font-size:32px;"><strong><br><a href="http://www.dgyz.net/">东莞市第一中学</a></strong></span><h1><br></h1>
-</div>
-</div>
-<div class="col-2">
-<div id="wb_Text5">
-<span style="color:#FF0000;font-family:微软雅黑;font-size:32px;"><strong><br><a href="https://link.zhihu.com/?target=https%3A//open.weixin.qq.com/qr/code%3Fusername%3Ddgyz20210917">莞一中青马社公众号</a></strong></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid9">
-<div id="LayoutGrid9-overlay"></div>
-<div id="LayoutGrid9">
+<div id="wb_LayoutGrid1">
+<div id="LayoutGrid1-overlay"></div>
+<div id="LayoutGrid1">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image5" style="display:inline-block;width:100%;height:auto;z-index:8;">
-<img src="images/标语1.png" id="Image5" alt="" width="940" height="142">
+<div id="wb_Text6">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:35px;"><strong>2022年社团嘉年华来了</strong></span>
+</div>
+<div id="wb_Text3">
+<span style="color:#000000;font-family:微软雅黑;font-size:24px;line-height:36px;">我们社团已经成立了将近1年，我们的宗旨正是在新形势下继续传播马克思主义，坚持用马克思主义的观点看问题。我们事实上是在培养未来青年的马克思主义研究者，以巩固我们的事业。<br>现在，我们将借着社团的机会，将大多数不了解我们或者对马克思主义抱有偏见的同学，在一次次活动中使他们有所兴趣。</span>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid10">
-<div id="LayoutGrid10">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3-overlay"></div>
+<div id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
-<div id="wb_Text9">
+<div class="col-1-padding">
+<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:6;">
+<img src="images/标语1.png" id="Image2" alt="" width="940" height="142">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="wb_LayoutGrid2">
+<div id="LayoutGrid2">
+<div class="row">
+<div class="col-1">
+<div id="wb_Text7">
 <span style="color:#979797;font-family:Arial;font-size:16px;">©</span><span style="color:#979797;font-family:微软雅黑;font-size:16px;">东莞一中青年马克思主义团体所有</span>
 </div>
 </div>

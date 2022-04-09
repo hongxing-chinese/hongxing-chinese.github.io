@@ -10,13 +10,9 @@
 <link href="css/index.css" rel="stylesheet">
 <script src="jquery-1.12.4.min.js"></script>
 <script src="jquery-ui.min.js"></script>
-<script src="skrollr.min.js"></script>
-<script src="wwb16.min.js"></script>
 <script>
 $(document).ready(function()
 {
-   $('#reviewsImage1').addClass('visibility-hidden');
-   $('#portfolio-image2').addClass('visibility-hidden');
    $("a[href*='#logo']").click(function(event)
    {
       event.preventDefault();
@@ -27,29 +23,14 @@ $(document).ready(function()
       event.preventDefault();
       $('html, body').stop().animate({ scrollTop: $('#wb_header').offset().top }, 600, 'easeOutCirc');
    });
-   $("a[href*='#upStickyLayer']").click(function(event)
+   $("a[href*='#LayoutGrid3']").click(function(event)
    {
       event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#upStickyLayer').offset().top }, 600, 'linear');
+      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid3').offset().top-88 }, 600, 'easeOutCirc');
    });
-   $("a[href*='#LayoutGrid8']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid8').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   function skrollrInit()
-   {
-      skrollr.init({forceHeight: false, mobileCheck: function() { return false; }, smoothScrolling: false});
-   }
-   skrollrInit();
-   $("a[href*='#LayoutGrid7']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid7').offset().top-88 }, 600, 'easeOutCirc');
-   });
-function countUpJavaScript5()
+function countUpJavaScript1()
 {
-   var $obj = $('#JavaScript5');
+   var $obj = $('#JavaScript1');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -65,12 +46,12 @@ function countUpJavaScript5()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript5();
+   countUpJavaScript1();
 });
-countUpJavaScript5();
-function countUpJavaScript6()
+countUpJavaScript1();
+function countUpJavaScript2()
 {
-   var $obj = $('#JavaScript6');
+   var $obj = $('#JavaScript2');
    var count = $obj.attr('data-count');
    var bottomObj = $obj.offset().top + $obj.outerHeight();
    var bottomWnd = $(window).scrollTop() + $(window).height();
@@ -86,14 +67,9 @@ function countUpJavaScript6()
 }
 $(window).scroll( function()
 {
-   countUpJavaScript6();
+   countUpJavaScript2();
 });
-countUpJavaScript6();
-   $("a[href*='#services']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_services').offset().top-88 }, 600, 'easeOutCirc');
-   });
+countUpJavaScript2();
    $("a[href*='#LayoutGrid5']").click(function(event)
    {
       event.preventDefault();
@@ -141,31 +117,6 @@ $(window).scroll( function()
    countUpJavaScript4();
 });
 countUpJavaScript4();
-   $("a[href*='#LayoutGrid4']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_LayoutGrid4').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   $("a[href*='#intro']").click(function(event)
-   {
-      event.preventDefault();
-      $('html, body').stop().animate({ scrollTop: $('#wb_intro').offset().top-88 }, 600, 'easeOutCirc');
-   });
-   function onScrollintro()
-   {
-      var $obj = $("#wb_intro");
-      if (!$obj.hasClass("in-viewport") && $obj.inViewPort(false))
-      {
-         $obj.addClass("in-viewport");
-         AnimateCss('reviewsImage1', 'animate-fade-in-up', 0, 1000);
-         AnimateCss('portfolio-image2', 'animate-fade-in-up', 500, 1000);
-      }
-   }
-   onScrollintro();
-   $(window).scroll(function(event)
-   {
-      onScrollintro();
-   });
    $("a[href*='#LayoutGrid1']").click(function(event)
    {
       event.preventDefault();
@@ -295,7 +246,7 @@ $(document).ready(function()
 
 
 
-<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:28;">
+<div id="wb_Text1" style="position:absolute;left:50px;top:32px;width:180px;height:12px;z-index:14;">
 &nbsp;</div>
 <div id="wb_logo">
 <div id="logo">
@@ -321,20 +272,15 @@ $(document).ready(function()
 <div id="wb_headerMenu" style="display:inline-block;width:100%;z-index:3;vertical-align:top;">
 <ul id="headerMenu">
 <li class="active" aria-current="page">&#39318;&#39029;</li>
-<li><a href="./关于.html">&#20851;&#20110;</a></li>
-<li><a href="./社论.html">&#31038;&#35770;</a></li>
-<li><a href="https://hongxin-chinese-write.mysxl.cn/">&#25237;&#31295;</a></li>
-<li><a href="./联系.html">&#32852;&#31995;</a></li>
+<li><a href="./时事.html">&#26102;&#20107;</a></li>
+<li><a href="./活动.html">&#27963;&#21160;</a></li>
+<li><a href="./杂文.html">&#26434;&#25991;</a></li>
 </ul>
 
 </div>
 </div>
 </div>
 </div>
-</div>
-<div id="upStickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:29;">
-<div id="wb_upIcon" style="position:absolute;left:9px;top:9px;width:24px;height:24px;text-align:center;z-index:4;">
-<a href="./index.html"><div id="upIcon"><i class="fa fa-angle-up"></i></div></a></div>
 </div>
 <div id="wb_LayoutGrid6">
 <div id="LayoutGrid6">
@@ -347,87 +293,18 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid8">
-<div id="LayoutGrid8">
+<div id="wb_LayoutGrid3">
+<div id="LayoutGrid3-overlay"></div>
+<div id="LayoutGrid3">
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Card4" style="display:flex;width:100%;text-align:center;z-index:6;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
-   <div id="Card4-card-body">
-      <div id="Card4-card-item0"><i class="fa fa-commenting-o"></i></div>
-      <div id="Card4-card-item1">时事</div>
-      <div id="Card4-card-item2">看看世界发生了什么</div>
-   </div>
+<div id="wb_Text4">
+<span style="color:#FF0000;font-family:Calibri;font-size:35px;"><strong>Pay</strong></span><span style="color:#FF0000;font-family:微软雅黑;font-size:35px;"><strong> </strong></span><span style="color:#FF0000;font-family:Calibri;font-size:35px;"><strong>Attention</strong></span><span style="color:#FF0000;font-family:微软雅黑;font-size:35px;"><strong>！<br></strong></span>
 </div>
-<a id="Button9" href="./时事.html" style="display:inline-block;width:104px;height:40px;z-index:7;">阅读</a>
+<div id="wb_Text5">
+<span style="color:#FF0000;font-family:微软雅黑;font-size:20px;">本网已经弃用，所有数据已经转移。本网仅保留时事，活动，杂文页面。更新将会非常缓慢。如有需要，请移步<br></span><span style="color:#FF0000;font-family:微软雅黑;font-size:37px;"><a href="hongxing.netlify.app">红星网</a></span><span style="color:#000000;font-family:Arial;font-size:20px;"><br></span>
 </div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_Card5" style="display:flex;width:100%;text-align:center;z-index:8;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
-   <div id="Card5-card-body">
-      <div id="Card5-card-item0"><i class="fa fa-keyboard-o"></i></div>
-      <div id="Card5-card-item1">热点消息</div>
-      <div id="Card5-card-item2">2022年社团嘉年华来了</div>
-   </div>
-</div>
-<a id="Button7" href="./热点消息.html" style="display:inline-block;width:104px;height:40px;z-index:9;">阅读</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid7">
-<div id="LayoutGrid7-overlay"></div>
-<div id="LayoutGrid7">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Image2" style="display:inline-block;width:100%;height:auto;z-index:10;">
-<img src="images/标语3.png" id="Image2" alt="" width="940" height="155">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_services">
-<div id="services">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_servicesCard1" style="display:flex;width:100%;text-align:center;z-index:11;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
-   <div id="servicesCard1-card-body">
-      <div id="servicesCard1-card-item0"><i class="fa fa-commenting-o"></i></div>
-      <div id="servicesCard1-card-item1">关于</div>
-      <div id="servicesCard1-card-item2">来了解我们的宗旨</div>
-   </div>
-</div>
-<a id="Button3" href="./关于.html" style="display:inline-block;width:104px;height:40px;z-index:12;">阅读</a>
-</div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_servicesCard2" style="display:flex;width:100%;text-align:center;z-index:13;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
-   <div id="servicesCard2-card-body">
-      <div id="servicesCard2-card-item0"><i class="fa fa-keyboard-o"></i></div>
-      <div id="servicesCard2-card-item1">社论</div>
-      <div id="servicesCard2-card-item2">来阅读一下本站的个人社论。当然，你也可以投稿。</div>
-   </div>
-</div>
-<a id="Button2" href="./社论.html" style="display:inline-block;width:104px;height:40px;z-index:14;">阅读</a>
-</div>
-</div>
-<div class="col-3">
-<div class="col-3-padding">
-<div id="wb_servicesCard3" style="display:flex;width:100%;text-align:center;z-index:15;" data--250-bottom="transform: scale(1.0,1.0);" data-333-bottom="transform: scale(0.5,0.5);">
-   <div id="servicesCard3-card-body">
-      <div id="servicesCard3-card-item0"><i class="fa fa-link"></i></div>
-      <div id="servicesCard3-card-item1">联系</div>
-      <div id="servicesCard3-card-item2">我们是青年马克思主义团体的官方网站，想了解我们就来吧。</div>
-   </div>
-</div>
-<a id="Button1" href="./联系.html" style="display:inline-block;width:104px;height:40px;z-index:16;">了解</a>
 </div>
 </div>
 </div>
@@ -439,60 +316,8 @@ $(document).ready(function()
 <div class="row">
 <div class="col-1">
 <div class="col-1-padding">
-<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:17;">
+<div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:7;">
 <img src="images/标语2.png" id="Image6" alt="" width="940" height="155">
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_LayoutGrid4">
-<div id="LayoutGrid4">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_infoCard1" style="display:flex;width:100%;text-align:center;z-index:18;">
-   <div id="infoCard1-card-body">
-      <div id="infoCard1-card-item0">巴黎公社的历史和对社会主义的意义</div>
-      <div id="infoCard1-card-item1">巴黎公社的历史<br>第一，法国革命“专政”<br></div>
-      <div id="infoCard1-card-item2"><a href="./巴黎公社的历史和对社会主义的意义.html">阅读</a></div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-2">
-<div class="col-2-padding">
-<div id="wb_infoCard2" style="display:flex;width:100%;text-align:center;z-index:19;">
-   <div id="infoCard2-card-body">
-      <div id="infoCard2-card-item0">列宁关于社会主义运动战略与策略的理论与启示</div>
-      <div id="infoCard2-card-item1">当今世界正处于百年未有之大变局，新冠肺炎疫情的全球蔓延，加速了</div>
-      <div id="infoCard2-card-item2"><a href="./列宁关于社会主义运动战略与策略的理论与启示.html">阅读</a></div>
-   </div>
-</div>
-</div>
-</div>
-<div class="col-3">
-<div class="col-3-padding">
-<div id="wb_infoCard3" style="display:flex;width:100%;text-align:center;z-index:20;">
-   <div id="infoCard3-card-body">
-      <div id="infoCard3-card-item0">中国社会阶级分析简述<br></div>
-      <div id="infoCard3-card-item1">当前，中国的社会状况发生了建国以来所没有的深层次变化，那就是伴随着私有制的大规模实行，这个社会的</div>
-      <div id="infoCard3-card-item2"><a href="./中国社会阶级分析简述.html">阅读</a></div>
-   </div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div id="wb_intro">
-<div id="intro">
-<div class="row">
-<div class="col-1">
-<div class="col-1-padding">
-<div id="wb_Text4">
-<span style="color:#FFFFFF;font-family:微软雅黑;font-size:48px;"><strong>团结起来，争取更大胜利</strong></span>
 </div>
 </div>
 </div>
@@ -508,36 +333,13 @@ $(document).ready(function()
 </div>
 </div>
 <div class="col-2">
-<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:23;">
+<div id="wb_Image3" style="display:inline-block;width:100%;height:auto;z-index:9;">
 <img src="images/地图.PNG" id="Image3" alt="" width="616" height="207">
 </div>
 </div>
 </div>
 </div>
 </div>
-<div id="wb_LayoutGrid2">
-<div id="LayoutGrid2">
-<div class="row">
-<div class="col-1">
-<div id="wb_Text7">
-<span style="color:#979797;font-family:Arial;font-size:16px;"><!-- 来必力City版安装代码 -->
-<div id="lv-container" data-id="city" data-uid="MTAyMC81NTc1OC8zMjIyNA==">
-<script type="text/javascript">
-   (function(d, s) {
-       var j, e = d.getElementsByTagName(s)[0];
-
-       if (typeof LivereTower === 'function') { return; }
-
-       j = d.createElement(s);
-       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
-       j.async = true;
-
-       e.parentNode.insertBefore(j, e);
-   })(document, 'script');
-</script>
-<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
-</div>
-<!-- City版安装代码已完成 -->
 <div id="wb_LayoutGrid2">
 <div id="LayoutGrid2">
 <div class="row">
