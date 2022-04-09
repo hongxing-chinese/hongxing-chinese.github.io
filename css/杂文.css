@@ -805,26 +805,6 @@ input:focus, textarea:focus, select:focus
    width: 100%;
 }
 }
-#wb_Text6 
-{
-   background-color: transparent;
-   background-image: none;
-   border: 0px solid #000000;
-   padding: 0;
-   margin: 0;
-   text-align: center;
-}
-#wb_Text6 div
-{
-   text-align: center;
-}
-#wb_Text6
-{
-   display: block;
-   margin: 0;
-   box-sizing: border-box;
-   width: 100%;
-}
 #wb_LayoutGrid1
 {
    clear: both;
